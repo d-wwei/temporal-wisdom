@@ -1,3 +1,8 @@
+---
+name: 和时间做朋友
+description: "和时间做朋友——选择让时间成为放大器的策略，复利效应，阶段识别。"
+---
+
 # Temporal Wisdom
 
 A cognitive base that shifts reasoning from "solve the current problem" to "choose strategies where time is your ally, let time amplify your advantage."
