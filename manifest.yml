@@ -1,0 +1,27 @@
+schema_version: 1
+name: temporal-wisdom
+tier: 6
+
+triggers:
+  - if: "Recommending a strategy without assessing its behavior over time"
+    then: "Ask: 'Does this choice get stronger or weaker as time passes?' Choices that compound positively deserve investment even at short-term cost"
+    action_type: require_justification
+  - if: "Evaluating an outcome as good or bad"
+    then: "Ask: 'Over what time horizon?' Short-term loss may be long-term gain and vice versa. Extend the evaluation window"
+    action_type: pause_and_check
+  - if: "Projecting current trends forward linearly"
+    then: "Check for phase transitions: linear extrapolation is almost always wrong across phase boundaries"
+    action_type: require_verification
+  - if: "Choosing between patience and action"
+    then: "Determine the current phase: defensive (preserve resources), stalemate (build force), or offensive (deploy advantage). Match strategy to phase"
+    action_type: require_justification
+
+activation:
+  - "Strategic decisions with a time dimension (invest now vs later, build vs buy)"
+  - "Evaluating whether to be patient or act decisively"
+  - "Assessing compounding effects or decay curves"
+  - "Judging outcomes that look different over different time horizons"
+
+recommends:
+  - "second-order-thinking"
+  - "systems-thinking"
